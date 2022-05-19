@@ -24,7 +24,7 @@ const LayoutBase = props => {
             <Nav {...props} />
 
             {/* 主体 */}
-            <div className="w-full">
+            <div id='wrapper' className="w-full">
 
                 <Title {...props} />
 

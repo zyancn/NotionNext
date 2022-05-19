@@ -27,6 +27,10 @@ const Messenger = dynamic(() => import('@/components/FacebookMessenger'), {
   ssr: false
 })
 
+const CanvasNestComponent = dynamic(() => import('@/components/CanvasNest'), {
+  ssr: false
+})
+
 const MyApp = ({ Component, pageProps }) => {
   // 外部插件
   const externalPlugins = <>
@@ -38,6 +42,7 @@ const MyApp = ({ Component, pageProps }) => {
         {BLOG.ADSENSE_GOOGLE_ID && <GoogleAdsense />}
         {BLOG.FACEBOOK_APP_ID && BLOG.FACEBOOK_PAGE_ID && <Messenger />}
         {JSON.parse(BLOG.FIREWORKS) && <Fireworks/>}
+        {JSON.parse(BLOG.CANVAS_BG) && <CanvasNestComponent/>}
     </>
 
   return (

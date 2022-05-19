@@ -34,25 +34,25 @@ export function DebugPanel () {
   }
 
   return (
-    <>
+    <div id='debug-panel'>
       {/* 调试按钮 */}
-      <div>
-        <div
-          style={{ writingMode: 'vertical-lr' }}
-          className={`bg-black text-white shadow-2xl p-2.5 rounded-l-xl cursor-pointer ${show ? 'right-96' : 'right-0'} fixed bottom-36 duration-200 z-50`}
-          onClick={toggleShow}
-        >
-          {show
-            ? (
-            <i className="fas fa-times">&nbsp;关闭调试</i>
-              )
-            : (
-            <i className="fas fa-tools">&nbsp;打开调试</i>
-              )}
-        </div>
+      <div
+        id='debug-button'
+        style={{ writingMode: 'vertical-lr' }}
+        className={`bg-black text-white shadow-2xl p-2.5 rounded-l-xl cursor-pointer ${show ? 'right-96' : 'right-0'} fixed bottom-36 duration-200 z-50`}
+        onClick={toggleShow}
+      >
+        {show
+          ? (
+          <i className="fas fa-times">&nbsp;关闭调试</i>
+            )
+          : (
+          <i className="fas fa-tools">&nbsp;打开调试</i>
+            )}
       </div>
 
       <div
+        id='debug-drawer'
         className={` ${
           show ? 'shadow-card' : '-right-96'
         } w-96 overflow-y-scroll font-sans h-full p-5 bg-white fixed right-0 bottom-0 z-50 duration-200`}
@@ -104,6 +104,6 @@ export function DebugPanel () {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
