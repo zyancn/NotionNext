@@ -12,6 +12,7 @@ import LoadingCover from './components/LoadingCover'
 import { useGlobal } from '@/lib/global'
 import BLOG from '@/blog.config'
 import FacebookPage from '@/components/FacebookPage'
+import dynamic from 'next/dynamic'
 
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
@@ -52,7 +53,7 @@ const LayoutBase = props => {
   }, [show])
 
   return (
-    <div className="bg-hexo-background-gray dark:bg-black">
+    <div className="bg-hexo-background-gray dark:bg-black bg-opacity-50">
       <CommonHead meta={meta} />
 
       <TopNav {...props} />

@@ -16,6 +16,8 @@ import { GlobalContextProvider } from '@/lib/global'
 import { DebugPanel } from '@/components/DebugPanel'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 import { Fireworks } from '@/components/Fireworks'
+import CanvasNestComponent from '@/components/CanvasNest'
+import React from 'react'
 
 const Ackee = dynamic(() => import('@/components/Ackee'), { ssr: false })
 const Gtag = dynamic(() => import('@/components/Gtag'), { ssr: false })
@@ -24,10 +26,6 @@ const GoogleAdsense = dynamic(() => import('@/components/GoogleAdsense'), {
   ssr: false
 })
 const Messenger = dynamic(() => import('@/components/FacebookMessenger'), {
-  ssr: false
-})
-
-const CanvasNestComponent = dynamic(() => import('@/components/CanvasNest'), {
   ssr: false
 })
 
@@ -42,8 +40,8 @@ const MyApp = ({ Component, pageProps }) => {
         {BLOG.ADSENSE_GOOGLE_ID && <GoogleAdsense />}
         {BLOG.FACEBOOK_APP_ID && BLOG.FACEBOOK_PAGE_ID && <Messenger />}
         {JSON.parse(BLOG.FIREWORKS) && <Fireworks/>}
-        {JSON.parse(BLOG.CANVAS_BG) && <CanvasNestComponent/>}
-    </>
+         {JSON.parse(BLOG.CANVAS_BG) && <CanvasNestComponent/>}
+  </>
 
   return (
         <GlobalContextProvider>

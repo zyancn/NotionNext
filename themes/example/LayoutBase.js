@@ -15,7 +15,7 @@ import JumpToTopButton from './components/JumpToTopButton'
 const LayoutBase = props => {
   const { children, meta } = props
   return (
-        <div className='dark:text-gray-300  bg-white dark:bg-black'>
+        <div className='dark:text-gray-300'>
             <CommonHead meta={meta} />
             {/* 顶栏LOGO */}
             <Header {...props} />
@@ -35,6 +35,8 @@ const LayoutBase = props => {
                     <SideBar {...props} />
 
                 </div>
+
+              <div className='h-screen w-screen fixed left-0 top-0 bg-white dark:bg-black' style={{ zIndex: -2 }}/>
 
             </div>
 
