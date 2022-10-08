@@ -3,7 +3,7 @@ const BLOG = {
   AUTHOR: '老言', // 作者
   BIO: 'work to earn 📋', // 作者简介
   LINK: 'https://laoyan.me', // 网站地址
-  KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
+  KEYWORDS: 'Notion, 博客,老言,web3,区块链,空投,比特币,以太坊', // 网站关键词 英文逗号隔开
   NOTION_PAGE_ID:
   process.env.NOTION_PAGE_ID || '3e0a586ab470484e8421f2ed6a165eb6', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
@@ -42,14 +42,14 @@ const BLOG = {
   PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'mail@tangly1024.com',
+  CONTACT_EMAIL: '#',
   CONTACT_WEIBO: '',
-  CONTACT_TWITTER: '',
-  CONTACT_GITHUB: 'https://github.com/tangly1024',
-  CONTACT_TELEGRAM: '',
+  CONTACT_TWITTER: '#',
+  CONTACT_GITHUB: 'https://github.com/zyancn',
+  CONTACT_TELEGRAM: '#',
 
   // 鼠标点击烟花特效
-  FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || true, // 鼠标点击烟花特效
+  FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || false, // 鼠标点击烟花特效
 
   // 悬浮挂件
   WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || false, // 是否显示宠物挂件
