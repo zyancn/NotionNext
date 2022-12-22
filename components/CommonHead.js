@@ -21,7 +21,6 @@ const CommonHead = ({ meta, children }) => {
     <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width,minimal-ui,user-scalable=no,viewport-fit=contain">
 <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
-<meta name="theme-color" content="#010737">
 <link rel="apple-touch-icon" sizes="114x114" href="public/laoyan.png"/>
       <meta name="theme-color" content={BLOG.BACKGROUND_DARK} />
       <meta
